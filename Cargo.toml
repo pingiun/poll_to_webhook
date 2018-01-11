@@ -1,0 +1,8 @@
+[package]
+name = "poll_to_webhook"
+version = "0.1.0"
+authors = ["Jelle Besseling <jelle@pingiun.com>"]
+
+[dependencies]
+reqwest = "0.8.2"
+serde_json = "*"
