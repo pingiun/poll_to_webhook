@@ -12,7 +12,7 @@ fn run() -> Result<(), reqwest::Error> {
     let timeout = env::var("TG_TIMEOUT").unwrap_or("20".to_string());
     let mut offset = 0;
 
-    let webhook = env::var("TG_WEBHOOK").unwrap_or("http://localhost:8080/webhook".to_string());
+    let webhook = env::var("TG_WEBHOOK").unwrap_or("http://127.0.0.1:8080/_telegram".to_string());
     let client = reqwest::Client::new();
 
     loop {
